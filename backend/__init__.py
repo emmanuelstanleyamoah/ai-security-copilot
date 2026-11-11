@@ -1,0 +1,1 @@
+"""FastAPI investigation API."""

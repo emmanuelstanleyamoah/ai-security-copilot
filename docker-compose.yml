@@ -1,0 +1,17 @@
+services:
+  api:
+    build: .
+    environment:
+      HOST: 0.0.0.0
+      PORT: "8000"
+    ports:
+      - "8000:8000"
+  ui:
+    build: .
+    command: streamlit run frontend/app.py --server.address 0.0.0.0 --server.port 8501
+    environment:
+      COPILOT_API_URL: http://api:8000
+    ports:
+      - "8501:8501"
+    depends_on:
+      - api

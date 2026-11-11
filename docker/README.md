@@ -1,0 +1,1 @@
+Images for this reference build are Mermaid diagrams in the README. Screenshot prompts and filenames are in [docs/images/README.md](../docs/images/README.md). The Docker build context is the repository root: [Dockerfile](../Dockerfile) and [docker-compose.yml](../docker-compose.yml).
