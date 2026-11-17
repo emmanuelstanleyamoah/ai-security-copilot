@@ -27,13 +27,13 @@ The value of this reference build is reviewability. A hiring team can clone it, 
 flowchart LR
     user[Analyst] --> ui[Streamlit UI]
     ui --> api[FastAPI]
-    api --> graph[Investigation graph]
-    graph --> gemini[Narrative path]
-    graph --> kb[Knowledge base]
+    api --> inv[Investigation graph]
+    inv --> gemini[Narrative path]
+    inv --> kb[Knowledge base]
     kb --> mitre[ATT&CK notes]
     kb --> cisa[CISA note]
     kb --> nist[NIST note]
-    graph --> report[Cited report]
+    inv --> report[Cited report]
 ```
 
 The narrative path is deterministic in this build. `GEMINI_API_KEY` is reserved and unused. Details: [docs/architecture.md](docs/architecture.md).

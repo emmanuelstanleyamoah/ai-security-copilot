@@ -6,11 +6,11 @@ The copilot is a local investigation pipeline. An alert is untrusted text. It is
 flowchart LR
     user[Analyst] --> ui[Streamlit UI]
     ui --> api[FastAPI]
-    api --> graph[Investigation graph]
-    graph --> guards[Guardrails]
-    graph --> kb[Knowledge base]
+    api --> inv[Investigation graph]
+    inv --> guards[Guardrails]
+    inv --> kb[Knowledge base]
     kb --> report[Cited report]
-    graph --> report
+    inv --> report
 ```
 
 ## Stages
